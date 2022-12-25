@@ -1,0 +1,10 @@
+run("8-bit");
+//setAutoThreshold("Default");
+setThreshold(0, 70);
+setOption("BlackBackground", false);
+run("Convert to Mask");
+run("Close");
+roiManager("Select", 5);
+run("Measure");
+run("Analyze Particles...", "size=0-Infinity summarize");
+run("Analyze Particles...", "size=24-Infinity summarize");

@@ -1,0 +1,13 @@
+run("Set Scale...", "distance=0 known=0 pixel=1 unit=pixel");
+run("Measure");
+run("8-bit");
+run("Auto Threshold...", "method=Yen white show");
+
+//run("Threshold...");
+//setThreshold(0, 0);
+setOption("BlackBackground", false);
+run("Convert to Mask");
+
+roiManager("Select", 1);
+run("Analyze Particles...", "summarize");
+run("Analyze Particles...", "size=11-Infinity show=Masks summarize");

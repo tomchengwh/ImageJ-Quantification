@@ -1,0 +1,9 @@
+run("8-bit");
+setThreshold(0, 150);
+setOption("BlackBackground", false);
+run("Convert to Mask");
+run("Close");
+run("Set Scale...", "distance=0 known=0 pixel=1 unit=pixel");
+roiManager("Select", 3);
+run("Measure");
+run("Analyze Particles...", "size=300-Infinity show=Masks summarize");

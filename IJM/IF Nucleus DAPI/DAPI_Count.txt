@@ -1,0 +1,5 @@
+run("8-bit");
+run("Set Scale...", "distance=0 known=0 pixel=1 unit=pixel");
+roiManager("Select", 11);
+run("Measure");
+run("Find Maxima...", "noise=22 output=Count");

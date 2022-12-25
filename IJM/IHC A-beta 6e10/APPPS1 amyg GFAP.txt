@@ -1,0 +1,9 @@
+run("Auto Threshold...", "method=MaxEntropy show");
+run("Threshold...");
+setThreshold(255, 255);
+roiManager("Select",14);
+run("Measure");
+run("Analyze Particles...", "size=15-Infinity circularity=0-1.00 show=Masks summarize");
+run("Analyze Particles...", "size=90-Infinity circularity=0-1.00 show=Masks summarize");
+
+

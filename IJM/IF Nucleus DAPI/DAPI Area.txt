@@ -1,0 +1,6 @@
+run("Set Scale...", "distance=0 known=0 pixel=1 unit=pixel");
+run("8-bit");
+run("Auto Threshold...", "method=Huang white show");
+run("Measure");
+run("Invert");
+run("Analyze Particles...", "  show=Masks summarize");

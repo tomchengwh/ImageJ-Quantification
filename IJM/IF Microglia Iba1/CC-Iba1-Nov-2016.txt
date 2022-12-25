@@ -1,0 +1,10 @@
+run("8-bit");
+run("Auto Threshold...", "method=Shanbhag show");
+run("Set Scale...", "distance=0 known=0 pixel=1 unit=pixel");
+roiManager("Select", 0);
+run("Measure");
+run("Analyze Particles...", "size=110-Infinity show=Masks summarize");
+run("Analyze Particles...", "size=110-294 summarize");
+run("Analyze Particles...", "size=295-590 summarize");
+run("Analyze Particles...", "size=591-2360 summarize");
+run("Analyze Particles...", "size=2361-infinity summarize");

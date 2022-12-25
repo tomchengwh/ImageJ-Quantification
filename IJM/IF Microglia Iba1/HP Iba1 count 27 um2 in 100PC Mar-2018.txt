@@ -1,0 +1,12 @@
+run("8-bit");
+run("Auto Local Threshold...", "method=Sauvola radius=34 parameter_1=0 parameter_2=0 white");
+run("Convert to Mask");
+run("Close");
+run("Set Scale...", "distance=0 known=0 pixel=1 unit=pixel");
+roiManager("Select", 0);
+run("Measure");
+run("Analyze Particles...", "size=560-Infinity show=Masks summarize");
+run("Analyze Particles...", "size=560-1500 summarize");
+run("Analyze Particles...", "size=1501-3000 summarize");
+run("Analyze Particles...", "size=3001-12000 summarize");
+run("Analyze Particles...", "size=12001-infinity summarize");

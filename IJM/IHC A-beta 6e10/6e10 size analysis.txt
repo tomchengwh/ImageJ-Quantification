@@ -1,0 +1,15 @@
+run("Set Scale...", "distance=0 known=0 pixel=1 unit=pixel");
+run("8-bit");
+setThreshold(0, 150);
+run("Convert to Mask");
+roiManager("Select", 0);
+run("Measure");
+run("Analyze Particles...", "size=300-infinity summarize");
+run("Analyze Particles...", "size=0-299 summarize");
+run("Analyze Particles...", "size=300-5000 summarize");
+run("Analyze Particles...", "size=5001-10000 summarize");
+run("Analyze Particles...", "size=10001-20000 summarize");
+run("Analyze Particles...", "size=20001-40000 summarize");
+run("Analyze Particles...", "size=40001-80000 summarize");
+run("Analyze Particles...", "size=80001-160000 summarize");
+run("Analyze Particles...", "size=160001-infinity summarize");

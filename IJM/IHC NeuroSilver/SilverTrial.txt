@@ -1,0 +1,4 @@
+run("Color Threshold...");
+roiManager("Select", 0);
+run("Measure");
+run("Analyze Particles...", "summarize");

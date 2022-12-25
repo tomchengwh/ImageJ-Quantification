@@ -1,0 +1,8 @@
+run("Set Scale...", "distance=0 known=0 pixel=1 unit=pixel");
+run("32-bit");
+setThreshold(0, 75);
+run("Convert to Mask");
+run("Invert");
+roiManager("Select", 0);
+run("Measure");
+run("Analyze Particles...", "size=0-Infinity show=Masks summarize");

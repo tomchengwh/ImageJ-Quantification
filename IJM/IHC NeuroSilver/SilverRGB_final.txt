@@ -1,0 +1,8 @@
+run("Color Threshold...");
+roiManager("Select", 11);
+run("Set Scale...", "distance=0 known=0 pixel=1 unit=pixel");
+//run("8-bit");
+//setAutoThreshold("Default");
+//run("Convert to Mask");
+run("Measure");
+run("Analyze Particles...", "summarize");

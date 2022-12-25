@@ -1,0 +1,8 @@
+run("Set Scale...", " ");
+run("8-bit");
+setAutoThreshold("Huang");
+setOption("BlackBackground", false);
+run("Convert to Mask");
+roiManager("Select",3);
+run("Measure");
+run("Analyze Particles...", "summarize");

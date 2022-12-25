@@ -1,0 +1,18 @@
+run("8-bit");
+run("Auto Threshold...", "method=Triangle white show");
+setThreshold(0, 0);
+setOption("BlackBackground", false);
+run("Convert to Mask");
+run("Set Scale...", "distance=0");
+roiManager("Select", 5);
+run("Measure");
+run("Analyze Particles...", "size=0-26  summarize");
+run("Analyze Particles...", "size=27-Infinity show=Masks summarize");
+run("Analyze Particles...", "size=27-450  summarize");
+run("Analyze Particles...", "size=451-900  summarize");
+run("Analyze Particles...", "size=901-1800  summarize");
+run("Analyze Particles...", "size=1801-3600  summarize");
+run("Analyze Particles...", "size=3601-7200  summarize");
+run("Analyze Particles...", "size=7201-14400  summarize");
+run("Analyze Particles...", "size=14401-Infinity  summarize");
+

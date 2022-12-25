@@ -1,0 +1,19 @@
+95-inf
+0.2-1.0
+
+10 um
+
+Nov-2016:
+200 um = 621 px
+1 um = 3.105 px
+1 um2 = 9.64 px2
+
+diameter = 10 um/31 px; 78.5 um2 = 756 px2
+
+Large bulb in pic diameter = 11 px = 3.54 um; 400 px2
+
+area 200-inf
+circ 0.15-1.0
+
+area 200-inf
+circ 0.20-1.0

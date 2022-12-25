@@ -1,0 +1,6 @@
+run("8-bit");
+run("Set Scale...", "distance=0 known=0 pixel=1 unit=pixel");
+run("Auto Local Threshold...", "method=Phansalkar radius=45 parameter_1=0 parameter_2=0 white");
+run("Invert");
+roiManager("Select", 3);
+run("Analyze Particles...", "size=200-Infinity circularity=0.20-1.00 show=Masks summarize");

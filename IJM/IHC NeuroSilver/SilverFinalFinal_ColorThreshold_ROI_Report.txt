@@ -1,0 +1,11 @@
+run("Color Threshold...");
+run("Set Scale...", " ");
+run("8-bit");
+setAutoThreshold("Default");
+//run("Threshold...");
+setOption("BlackBackground", false);
+run("Convert to Mask");
+roiManager("Select",81);
+run("Measure");
+run("Analyze Particles...", "summarize");
+
